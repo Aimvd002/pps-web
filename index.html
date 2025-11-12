@@ -38,15 +38,12 @@
   </head>
 
   <body class="light" id="top">
-
-    <input type="radio" name="lang" class="lang-es" id="lang-es" checked>
-    <input type="radio" name="lang" class="lang-en" id="lang-en">
+    <input type="radio" name="lang" class="lang-es" id="lang-es" checked />
+    <input type="radio" name="lang" class="lang-en" id="lang-en" />
 
     <header class="header center">
       <h3>
-        <a href="https://raulortegar.github.io/pps-web" class="link"
-          >PPS Web</a
-        >
+        <a href="https://raulortegar.github.io/pps-web" class="link">PPS Web</a>
       </h3>
 
       <nav class="nav center">
@@ -60,7 +57,12 @@
             <a class="link link--nav en" href="#tools">Tools</a>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav" href="#team">Equipo</a>
+            <a class="link link--nav es" href="#team">Equipo</a>
+            <a class="link link--nav en" href="#team">Team</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav es" href="#contact">Contacto</a>
+            <a class="link link--nav en" href="#contact">Contact</a>
           </li>
 	  <li class="nav__list-item">
 	    <a class="link link--nav es" href="#team">Equipo</a>
@@ -109,16 +111,15 @@
           Aguadulce en 2025/26.
         </p>
         <p class="about__desc en">
-        Basic website as a practical exercise in using Git and 
-        Gitflow, within the framework of best practices for software deployment.
-        Course taught by IES Aguadulce in 2025/26
+          Basic website as a practical exercise in using Git and Gitflow, within
+          the framework of best practices for software deployment. Course taught
+          by IES Aguadulce in 2025/26.
         </p>
 
         <div class="about__contact center">
           <a href="https://iesaguadulce.com">
             <span class="btn btn--outline">IES AGUADULCE</span>
           </a>
-
           <a
             href="https://github.com/rjshkhr"
             aria-label="github"
@@ -126,7 +127,6 @@
           >
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
-
           <a
             href="https://linkedin.com/in/rjshkhr"
             aria-label="linkedin"
@@ -143,6 +143,7 @@
         <h2 class="section__title en">Contents</h2>
 
         <div class="projects__grid">
+          <!-- Proyecto 1 -->
           <div class="project">
             <h3 class="es">Pruebas Unitarias</h3>
             <h3 class="en">Unit Tests</h3>
@@ -171,7 +172,6 @@
               <li class="project__stack-item">Mocha+Chai</li>
               <li class="project__stack-item">Jasmine</li>
             </ul>
-
             <a
               href="https://www.geeksforgeeks.org/software-testing/unit-testing-software-testing/"
               aria-label="live preview"
@@ -181,6 +181,7 @@
             </a>
           </div>
 
+          <!-- Proyecto 2 -->
           <div class="project">
             <h3>OWASP-ASVS</h3>
             <p class="project__description es">
@@ -219,8 +220,6 @@ production deployment.
               <li class="project__stack-item es">Seguridad Api</li>
               <li class="project__stack-item en">Api Security</li>
             </ul>
-
-            
             <a
               href="https://owasp.org/www-project-application-security-verification-standard/"
               aria-label="live preview"
@@ -230,6 +229,7 @@ production deployment.
             </a>
           </div>
 
+          <!-- Proyecto 3 -->
           <div class="project">
             <h3>CI/CD</h3>
             <p class="project__description es">
@@ -258,7 +258,6 @@ minimizing risks and maintaining a stable and reliable application for users.
               <li class="project__stack-item">GitLab</li>
               <li class="project__stack-item">Azure DevOps</li>
             </ul>
-
             <a
               href="https://www.getguru.com/es/reference/cicd"
               aria-label="live preview"
@@ -417,10 +416,17 @@ minimizing risks and maintaining a stable and reliable application for users.
     <footer class="footer">
       <a
         href="https://github.com/raulortegar/pps-web"
-        class="link footer__link"
+        class="link footer__link es"
         target="_blank"
       >
         Creado por Alumnado-PPS
+      </a>
+      <a
+        href="https://github.com/raulortegar/pps-web"
+        class="link footer__link en"
+        target="_blank"
+      >
+        Created by Alumnado-PPS
       </a>
  		 <a
    	 href="https://github.com/raulortegar/pps-web"
