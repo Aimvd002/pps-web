@@ -23,24 +23,30 @@
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!--  Se mantiene crossorigin en fonts.gstatic, necesario para Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
+    <!--  Eliminado crossorigin="anonymous" inseguro -->
     <script src="https://kit.fontawesome.com/fa62c117c7.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
     <title>Raj Shekhar</title>
   </head>
 
   <body class="light" id="top">
-    <input type="radio" name="lang" class="lang-es" id="lang-es" checked />
-    <input type="radio" name="lang" class="lang-en" id="lang-en" />
+
+    <input type="radio" name="lang" class="lang-es" id="lang-es" checked>
+    <input type="radio" name="lang" class="lang-en" id="lang-en">
 
     <header class="header center">
       <h3>
-        <a href="https://raulortegar.github.io/pps-web" class="link">PPS Web</a>
+        <a href="https://raulortegar.github.io/pps-web" class="link"
+          >PPS Web</a
+        >
       </h3>
 
       <nav class="nav center">
@@ -54,9 +60,12 @@
             <a class="link link--nav en" href="#tools">Tools</a>
           </li>
           <li class="nav__list-item">
-            <a class="link link--nav es" href="#team">Equipo</a>
-            <a class="link link--nav en" href="#team">Team</a>
+            <a class="link link--nav" href="#team">Equipo</a>
           </li>
+	  <li class="nav__list-item">
+	    <a class="link link--nav es" href="#team">Equipo</a>
+	    <a class="link link--nav en" href="#team">Team</a>
+	  </li>
           <li class="nav__list-item">
             <a class="link link--nav es" href="#contact">Contacto</a>
             <a class="link link--nav en" href="#contact">Contact</a>
@@ -86,27 +95,30 @@
       <div class="about center">
         <h1><span class="about__name es">Puesta en Producción Segura</span></h1>
         <h1><span class="about__name en">Safe Production Deployment</span></h1>
-        <h2 class="about__role es">
-          Módulo del CE en Ciberseguridad en IT, curso 25-26
-        </h2>
-        <h2 class="about__role en">
-          CE Module on Cybersecurity in IT, course 25-26
-        </h2>
+        <h2 class="about__role es">Módulo del CE en Ciberseguridad en IT, curso 25-26</h2>
+        <h2 class="about__role en">CE Module on Cybersecurity in IT, course 25-26</h2>
         <p class="about__desc es">
+          Web básica como práctica de uso de git y
+          gitflow, dentro de las buenas prácticas para el despliegue de software.
+          Curso impartido por el IES Aguadulce en 2025/26
+        <h1><span class="about__name">Puesta en Producción Segura</span></h1>
+        <h2 class="about__role">Módulo del <abbr title="Curso Especialista">CE</abbr> en Ciberseguridad en <abbr title="Tecnologías de la Información">IT</abbr><br> Curso 2025/26</h2>
+        <p class="about__desc">
           Web básica como práctica de uso de git y gitflow, dentro de las buenas
           prácticas para el despliegue de software. Curso impartido por el IES
           Aguadulce en 2025/26.
         </p>
         <p class="about__desc en">
-          Basic website as a practical exercise in using Git and Gitflow, within
-          the framework of best practices for software deployment. Course taught
-          by IES Aguadulce in 2025/26.
+        Basic website as a practical exercise in using Git and 
+        Gitflow, within the framework of best practices for software deployment.
+        Course taught by IES Aguadulce in 2025/26
         </p>
 
         <div class="about__contact center">
           <a href="https://iesaguadulce.com">
             <span class="btn btn--outline">IES AGUADULCE</span>
           </a>
+
           <a
             href="https://github.com/rjshkhr"
             aria-label="github"
@@ -114,6 +126,7 @@
           >
             <i aria-hidden="true" class="fab fa-github"></i>
           </a>
+
           <a
             href="https://linkedin.com/in/rjshkhr"
             aria-label="linkedin"
@@ -130,19 +143,26 @@
         <h2 class="section__title en">Contents</h2>
 
         <div class="projects__grid">
-          <!-- Proyecto 1 -->
           <div class="project">
             <h3 class="es">Pruebas Unitarias</h3>
             <h3 class="en">Unit Tests</h3>
             <p class="project__description es">
-              Para verificar, de forma aislada, que cada componente o función del
-              código funciona correctamente antes de integrarse con el resto del
-              sistema...
+              Para verificar, de forma aislada, que cada
+              componente o función del código funciona correctamente antes de integrarse con el resto del
+              sistema. Permiten detectar errores de manera temprana, reducir costes de corrección y facilitar
+              el mantenimiento evolutivo del software. Su impacto en una PPS es directo: al minimizar fallos
+              ocultos, aumentar la fiabilidad del código y asegurar que los cambios no rompen
+              funcionalidades existentes, se reduce el riesgo de errores críticos en producción y se
+              incrementa la estabilidad y confianza en el despliegue final.
             </p>
             <p class="project__description en">
-              To verify, in isolation, that each component or function of the
-              code works correctly before integrating it with the rest of the
-              system...
+              To verify, in isolation, that each
+              component or function of the code works correctly before integrating it with the rest of the
+              system. They allow for early error detection, reduce correction costs, and facilitate
+              the evolutionary maintenance of the software. Their impact on a PPS is direct: by minimizing hidden
+              failures, increasing code reliability, and ensuring that changes do not break
+              existing functionalities, the risk of critical errors in production is reduced, and
+              stability and confidence in the final deployment are increased.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">JUnit 5</li>
@@ -151,6 +171,7 @@
               <li class="project__stack-item">Mocha+Chai</li>
               <li class="project__stack-item">Jasmine</li>
             </ul>
+
             <a
               href="https://www.geeksforgeeks.org/software-testing/unit-testing-software-testing/"
               aria-label="live preview"
@@ -160,20 +181,30 @@
             </a>
           </div>
 
-          <!-- Proyecto 2 -->
           <div class="project">
             <h3>OWASP-ASVS</h3>
             <p class="project__description es">
-              El estándar ASVS proporciona un marco de requisitos y controles de
-              seguridad para verificar que una aplicación cumple con buenas
-              prácticas de desarrollo seguro...
+              El estandar ASVS (Application Security Verification Standard) proporciona un
+marco de requisitos y controles de seguridad para verificar que una aplicación cumple con
+buenas prácticas de desarrollo seguro antes de su puesta en producción. Su objetivo es
+asegurar que el software ha sido evaluado de forma sistemática en aspectos clave como
+autenticación, gestión de sesiones, control de acceso, cifrado, validación de datos o protección
+frente a vulnerabilidades comunes. Aplicarlo en el ciclo de desarrollo permite reducir riesgos,
+garantizar un nivel de seguridad consistente y ofrecer una base sólida para una puesta en
+producción segura y confiable.
             </p>
             <p class="project__description en">
-              The ASVS (Application Security Verification Standard) provides a
-              framework of security requirements and controls...
+The ASVS (Application Security Verification Standard) provides a
+framework of security requirements and controls to verify that an application complies with
+secure development best practices before deployment. Its objective is
+to ensure that the software has been systematically evaluated on key aspects such as
+authentication, session management, access control, encryption, data validation, and protection
+against common vulnerabilities. Applying it throughout the development lifecycle reduces risks,
+guarantees a consistent level of security, and provides a solid foundation for a secure and reliable
+production deployment.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item es">Niveles ASVS</li>
+              <li class="project__stack-item es">NIveles ASVS</li>
               <li class="project__stack-item en">ASVS levels</li>
               <li class="project__stack-item es">Autenticación</li>
               <li class="project__stack-item en">Authentication</li>
@@ -188,6 +219,8 @@
               <li class="project__stack-item es">Seguridad Api</li>
               <li class="project__stack-item en">Api Security</li>
             </ul>
+
+            
             <a
               href="https://owasp.org/www-project-application-security-verification-standard/"
               aria-label="live preview"
@@ -197,18 +230,25 @@
             </a>
           </div>
 
-          <!-- Proyecto 3 -->
           <div class="project">
             <h3>CI/CD</h3>
             <p class="project__description es">
-              El CI/CD (Integración Continua/Despliegue continuo) es un conjunto
-              de prácticas que automatizan la construcción, prueba y despliegue
-              de aplicaciones...
+             El CI/CD (Integración Continua/Despliegue continuo) es un conjunto de prácticas que
+automatizan la construcción, prueba y despliegue de aplicaciones, permitiendo entregar
+cambios de manera rápida y confiable. Asegura que cada modificación del código pasa por
+pruebas automatizadas (unitarias, de integración y de seguridad) antes de llegar a producción,
+reduciendo errores humanos, garantizando la consistencia del entorno y facilitando la
+detección temprana de vulnerabilidades. Así, se logra un flujo de entrega ágil y seguro, donde
+los riesgos se minimizan y la aplicación se mantiene estable y confiable para los usuarios.
             </p>
             <p class="project__description en">
-              CI/CD (Continuous Integration/Continuous Deployment) is a set of
-              practices that automate the building, testing, and deployment of
-              applications...
+CI/CD (Continuous Integration/Continuous Deployment) is a set of practices that
+automate the building, testing, and deployment of applications, enabling the rapid and reliable delivery
+of changes. It ensures that every code modification undergoes
+automated testing (unit, integration, and security) before reaching production,
+reducing human error, guaranteeing environment consistency, and facilitating the
+early detection of vulnerabilities. This results in an agile and secure delivery flow,
+minimizing risks and maintaining a stable and reliable application for users.
             </p>
             <ul class="project__stack">
               <li class="project__stack-item">Docker</li>
@@ -218,6 +258,7 @@
               <li class="project__stack-item">GitLab</li>
               <li class="project__stack-item">Azure DevOps</li>
             </ul>
+
             <a
               href="https://www.getguru.com/es/reference/cicd"
               aria-label="live preview"
@@ -248,11 +289,98 @@
           <li class="skills__list-item btn btn--plain">CI/CD</li>
         </ul>
       </section>
+	<!-- Sección Equipo -->
+	<section id="team" class="team-section">
+  		<h2 class="es">Equipo</h2>
+  		<h2 class="en">Team</h2>
+  		<div class="team-container">
+   	 		<div class="team-card">
+      				<h3>Dani</h3>
+    			</div>
+    			<div class="team-card">
+      				<h3>Balbino</h3>
+     			</div>
+    			<div class="team-card">
+      				<h3>Dario</h3>
+      			</div>
+    			<div class="team-card">
+      				<h3>Carlos</h3>
+    			</div>
+    			<div class="team-card">
+      				<h3>Juan Vicente</h3>
+    			</div>
+  			<div class="team-card">
+                                <h3>Alejandro</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Jose Alejandro</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Marian</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Maria Isabel</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Juan Gabriel</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Sergio</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Aimad</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>David</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Samuel</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Luis Alberto</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Nicolas</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Juan Miguel</h3>
+                        </div>
+			<div class="team-card">
+                                <h3>Dalian</h3>
+                        </div>
+	</div>
+	</section>
+
+
+      <!-- Equipo -->
+<section class="section skills" id="equipo">
+  <h2 class="section__title es">Equipo</h2>
+  <h2 class="section__title en">Team</h2>
+  <ul class="skills__list">
+  <li class="skills__list-item btn btn--plain es">Profesor</li>
+  <li class="skills__list-item btn btn--plain en">Teacher</li>
+  <li class="skills__list-item btn btn--plain">Nico Salmerón</li>
+  <li class="skills__list-item btn btn--plain">Juan Vicente</li>
+  <li class="skills__list-item btn btn--plain">Carlos Sanchez</li>
+  <li class="skills__list-item btn btn--plain">Balbino López</li>
+  <li class="skills__list-item btn btn--plain">Daniel Fernández</li>
+  <li class="skills__list-item btn btn--plain">Juan Miguel</li>
+  <li class="skills__list-item btn btn--plain">David Parra</li>
+  <li class="skills__list-item btn btn--plain">María Isabel</li>
+  <li class="skills__list-item btn btn--plain">Dario Fernández</li>
+  <li class="skills__list-item btn btn--plain">Marian Georgian</li>
+  <li class="skills__list-item btn btn--plain">José Alejandro</li>
+  <li class="skills__list-item btn btn--plain">Aimad Moussaid</li>
+  <li class="skills__list-item btn btn--plain">Zelmar Hernán</li>
+  <li class="skills__list-item btn btn--plain">Samuel Reche</li>
+  <li class="skills__list-item btn btn--plain">Dalian Timotei</li>
+
+  </ul>
+</section>
 
       <!-- Equipo -->
       <section id="team" class="team-section">
-        <h2 class="es">Equipo</h2>
-        <h2 class="en">Team</h2>
+        <h2>Equipo</h2>
         <div class="team-container">
           <div class="team-card"><h3>Dani</h3></div>
           <div class="team-card"><h3>Balbino</h3></div>
@@ -289,19 +417,27 @@
     <footer class="footer">
       <a
         href="https://github.com/raulortegar/pps-web"
-        class="link footer__link es"
+        class="link footer__link"
         target="_blank"
       >
         Creado por Alumnado-PPS
       </a>
+ 		 <a
+   	 href="https://github.com/raulortegar/pps-web"
+   	 class="link footer__link es"
+   	 target="_blank"
+ 	 >
+  	  Creado por Alumnado-PPS
+		  </a>
       <a
-        href="https://github.com/raulortegar/pps-web"
-        class="link footer__link en"
-        target="_blank"
-      >
-        Created by Alumnado-PPS
-      </a>
+   	 href="https://github.com/raulortegar/pps-web"
+   	 class="link footer__link en"
+   	 target="_blank"
+ 	 >
+  	  Created by Alumnado-PPS
+		  </a>
     </footer>
+
 
     <div class="scroll-container">
       <div class="scroll-top">
